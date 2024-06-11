@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850177070821",
+    "project_id": "body-boost-e4cfa",
+    "storage_bucket": "body-boost-e4cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850177070821:android:85b640085e7b94ec6ea60c",
+        "android_client_info": {
+          "package_name": "com.example.bodyboost"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7wmre9L1OtqCTJtVnEyF7vEL-Q_TYVw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

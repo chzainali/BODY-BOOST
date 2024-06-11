@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bodyboost.main.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackCategoriesFragment"
+        android:name="com.example.bodyboost.main.fragments.TrackCategoriesFragment"
+        android:label="fragment_track_categories"
+        tools:layout="@layout/fragment_track_categories" >
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_setWorkoutFragment"
+            app:destination="@id/setWorkoutFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_setStepsCounterFragment"
+            app:destination="@id/setStepsCounterFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_stepsCounterFragment"
+            app:destination="@id/stepsCounterFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_caloriesFragment"
+            app:destination="@id/caloriesFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_setCaloriesFragment"
+            app:destination="@id/setCaloriesFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_hydrationFragment"
+            app:destination="@id/hydrationFragment" />
+        <action
+            android:id="@+id/action_trackCategoriesFragment_to_setHydrationFragment"
+            app:destination="@id/setHydrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.bodyboost.main.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setWorkoutFragment"
+        android:name="com.example.bodyboost.main.fragments.workout.SetWorkoutFragment"
+        android:label="fragment_set_workout"
+        tools:layout="@layout/fragment_set_workout" />
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.bodyboost.main.fragments.workout.WorkoutFragment"
+        android:label="fragment_workout"
+        tools:layout="@layout/fragment_workout" >
+    </fragment>
+    <fragment
+        android:id="@+id/setStepsCounterFragment"
+        android:name="com.example.bodyboost.main.fragments.steps.SetStepsCounterFragment"
+        android:label="fragment_set_steps_counter"
+        tools:layout="@layout/fragment_set_steps_counter" />
+    <fragment
+        android:id="@+id/stepsCounterFragment"
+        android:name="com.example.bodyboost.main.fragments.steps.StepsCounterFragment"
+        android:label="fragment_steps_counter"
+        tools:layout="@layout/fragment_steps_counter" />
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.example.bodyboost.main.fragments.calories.CaloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories" >
+        <action
+            android:id="@+id/action_caloriesFragment_to_setCaloriesFragment"
+            app:destination="@id/setCaloriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setCaloriesFragment"
+        android:name="com.example.bodyboost.main.fragments.calories.SetCaloriesFragment"
+        android:label="fragment_set_calories"
+        tools:layout="@layout/fragment_set_calories" />
+    <fragment
+        android:id="@+id/hydrationFragment"
+        android:name="com.example.bodyboost.main.fragments.hydration.HydrationFragment"
+        android:label="fragment_hydration"
+        tools:layout="@layout/fragment_hydration" >
+        <action
+            android:id="@+id/action_hydrationFragment_to_setHydrationFragment"
+            app:destination="@id/setHydrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setHydrationFragment"
+        android:name="com.example.bodyboost.main.fragments.hydration.SetHydrationFragment"
+        android:label="fragment_set_hydration"
+        tools:layout="@layout/fragment_set_hydration" />
+</navigation>
